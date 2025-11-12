@@ -1,16 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  font-family: "system-ui", sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@theme {
+  --color-background: rgb(17, 17, 17);
+  --color-foreground: rgb(209, 209, 209);
+  --color-muted-foreground: rgb(140, 140, 143);
+  --color-border: rgb(48, 48, 48);
 }
 
 * {
@@ -19,9 +13,16 @@
 
 body {
   margin: 0;
-  background-color: rgb(17, 17, 17);
-  color: rgb(209, 209, 209);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
   min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #root {
