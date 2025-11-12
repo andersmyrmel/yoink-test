@@ -1,4 +1,4 @@
-import DataGrid, { Column } from 'react-data-grid';
+import DataGrid from 'react-data-grid';
 import 'react-data-grid/lib/styles.css';
 
 interface Row {
@@ -13,7 +13,7 @@ interface Row {
   col8: string;
 }
 
-const columns: Column<Row>[] = [
+const columns = [
   { key: 'id', name: 'ID', width: 32, frozen: true },
   { key: 'col1', name: 'Column 1', width: 200 },
   { key: 'col2', name: 'Column 2', width: 200 },
