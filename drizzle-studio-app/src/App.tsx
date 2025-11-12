@@ -1,18 +1,21 @@
 import { Sidebar } from './components/Sidebar';
+import { Topbar } from './components/Topbar';
 import { DataGridComponent } from './components/DataGrid';
 import './App.css';
 
 function App() {
   return (
-    <div className="grid size-full">
-      <div className="grid-area-1-1 flex size-full bg-[rgb(55,53,47)]">
-        <div className="relative flex">
-          <div className="flex grow transition-width duration-150 ease-in-out">
-            <Sidebar />
-          </div>
-        </div>
+    <div className="flex h-screen w-screen overflow-hidden bg-background">
+      {/* Sidebar */}
+      <Sidebar />
 
-        <div className="bg-background relative flex min-w-[0] flex-1">
+      {/* Main content area */}
+      <div className="flex flex-1 flex-col overflow-hidden">
+        {/* Topbar */}
+        <Topbar />
+
+        {/* Data grid */}
+        <div className="flex-1 overflow-hidden">
           <DataGridComponent />
         </div>
       </div>

@@ -43,26 +43,14 @@ const rows = generateRows(50);
 
 export function DataGridComponent() {
   return (
-    <div className="flex min-w-[0] flex-1 flex-col overflow-auto">
-      <div className="flex min-w-[0] flex-1 flex-col overflow-hidden">
-        <div className="flex flex-col border-b bg-background p-3">
-          <div className="flex items-center gap-2">
-            <h2 className="text-lg font-semibold leading-none tracking-tight">
-              All statements executed successfully
-            </h2>
-          </div>
-        </div>
-
-        <div className="flex-1 overflow-auto">
-          <DataGrid
-            columns={columns}
-            rows={rows}
-            className="fill-grid rdg-dark"
-            style={{ height: '100%' }}
-            rowHeight={32}
-          />
-        </div>
-      </div>
+    <div className="flex min-w-[0] flex-1 flex-col">
+      <DataGrid
+        columns={columns}
+        rows={rows}
+        className="fill-grid rdg-dark"
+        style={{ height: '100%' }}
+        rowHeight={32}
+      />
     </div>
   );
 }
