@@ -45,8 +45,8 @@ export const Topbar = styled.header`
 export const ContentArea = styled.div`
   flex: 1;
   overflow-y: auto;
-  background: ${colors.bgElevated2};
-  padding: ${spacing[4]};
+  background: ${colors.white};
+  padding: 0;
 `;
 
 export const SidebarSection = styled.div`

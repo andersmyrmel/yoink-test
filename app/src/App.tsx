@@ -125,100 +125,52 @@ function App() {
           </Topbar>
 
           <ContentArea>
-            <div style={{ maxWidth: '1185px', margin: '0 auto' }}>
-              <h1
-                style={{
-                  fontSize: '16px',
-                  fontWeight: 600,
-                  lineHeight: '20px',
-                  marginBottom: '24px',
-                  color: 'rgb(36, 37, 41)',
-                }}
-              >
-                Welcome to the Design System
-              </h1>
-
-              <div
-                style={{
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(3, 1fr)',
-                  gap: '16px',
-                  marginBottom: '24px',
-                }}
-              >
-                {[1, 2, 3, 4, 5, 6].map((item) => (
-                  <div
-                    key={item}
-                    style={{
-                      padding: '16px',
-                      background: 'rgb(251, 251, 251)',
-                      borderRadius: '8px',
-                      border: '1px solid rgba(0, 0, 0, 0.05)',
-                    }}
-                  >
-                    <h3
-                      style={{
-                        fontSize: '14px',
-                        fontWeight: 500,
-                        lineHeight: '20px',
-                        marginBottom: '8px',
-                      }}
-                    >
-                      Card {item}
-                    </h3>
-                    <p
-                      style={{
-                        fontSize: '12px',
-                        fontWeight: 500,
-                        lineHeight: '16px',
-                        color: 'rgba(0, 0, 0, 0.55)',
-                        marginBottom: '12px',
-                      }}
-                    >
-                      This is a sample card demonstrating the design system with
-                      proper spacing, typography, and colors.
-                    </p>
-                    <div style={{ display: 'flex', gap: '8px' }}>
-                      <Badge>Tag {item}</Badge>
-                      <Button variant="ghost" size="small">
-                        View
-                      </Button>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div
-                style={{
-                  padding: '24px',
-                  background: 'rgb(251, 251, 251)',
-                  borderRadius: '8px',
-                  border: '1px solid rgba(0, 0, 0, 0.05)',
-                }}
-              >
-                <h2
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: '379px 379px 379px',
+                gap: '1px',
+                background: 'rgba(0, 0, 0, 0.05)',
+                height: '100%',
+              }}
+            >
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].map((item) => (
+                <div
+                  key={item}
                   style={{
-                    fontSize: '14px',
-                    fontWeight: 500,
-                    lineHeight: '20px',
-                    marginBottom: '16px',
+                    background: 'rgb(255, 255, 255)',
+                    padding: '16px',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '8px',
                   }}
                 >
-                  Component Examples
-                </h2>
-
-                <div style={{ display: 'flex', gap: '8px', marginBottom: '16px' }}>
-                  <Button variant="primary">Primary Button</Button>
-                  <Button variant="secondary">Secondary Button</Button>
-                  <Button variant="ghost">Ghost Button</Button>
+                  <div
+                    style={{
+                      fontSize: '14px',
+                      fontWeight: 500,
+                      lineHeight: '20px',
+                      color: 'rgb(0, 0, 0)',
+                    }}
+                  >
+                    Note {item}
+                  </div>
+                  <div
+                    style={{
+                      fontSize: '12px',
+                      fontWeight: 500,
+                      lineHeight: '16px',
+                      color: 'rgba(0, 0, 0, 0.55)',
+                    }}
+                  >
+                    Sample note content demonstrating the data table layout with
+                    proper typography and spacing from the design system.
+                  </div>
+                  <div style={{ display: 'flex', gap: '8px', marginTop: '4px' }}>
+                    <Badge>Tag</Badge>
+                  </div>
                 </div>
-
-                <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                  <Badge>Badge 1</Badge>
-                  <Badge>Badge 2</Badge>
-                  <Badge>Badge 3</Badge>
-                </div>
-              </div>
+              ))}
             </div>
           </ContentArea>
         </MainContent>
