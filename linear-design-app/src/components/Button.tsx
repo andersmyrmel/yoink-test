@@ -3,7 +3,7 @@ import './Button.css';
 
 interface ButtonProps {
   children: React.ReactNode;
-  variant?: 'default' | 'outline' | 'ghost';
+  variant?: 'default' | 'primary' | 'outline' | 'ghost';
   size?: 'small' | 'medium' | 'large';
   shape?: 'default' | 'pill';
   onClick?: () => void;

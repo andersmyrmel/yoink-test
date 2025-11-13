@@ -7,6 +7,7 @@
   cursor: pointer;
   font-family: var(--font-regular);
   font-weight: 400;
+  line-height: 24px;
   transition: all var(--default-duration) var(--default-easing);
   background: transparent;
   color: var(--color-text-secondary);
@@ -29,9 +30,19 @@
   background: var(--color-bg-secondary);
 }
 
+.btn--primary {
+  background: var(--color-interactive-accent);
+  color: var(--color-text-primary);
+  border: none;
+}
+
+.btn--primary:hover {
+  opacity: 0.9;
+}
+
 .btn--outline {
   background: transparent;
-  color: var(--color-text-secondary);
+  color: var(--color-text-button-alt);
   border: 1px solid var(--color-border-primary);
 }
 
@@ -89,4 +100,10 @@
 .btn__icon svg {
   width: 16px;
   height: 16px;
+}
+
+/* Buttons with icons - asymmetric padding for default and primary */
+.btn--default.btn--small:has(.btn__icon),
+.btn--primary.btn--small:has(.btn__icon) {
+  padding: 0px 8px 0px 6px;
 }

@@ -92,7 +92,7 @@ function App() {
               <Button variant="ghost" icon={<SearchIcon />}>
                 Search
               </Button>
-              <Button variant="default" icon={<PlusIcon />}>
+              <Button variant="primary" icon={<PlusIcon />}>
                 New Project
               </Button>
             </>
@@ -135,10 +135,11 @@ function App() {
             <div className="component-section">
               <h3 className="component-title">Buttons</h3>
               <div className="component-demo">
+                <Button variant="primary">Primary Button</Button>
                 <Button variant="default">Default Button</Button>
                 <Button variant="outline">Outline Button</Button>
                 <Button variant="ghost">Ghost Button</Button>
-                <Button variant="default" icon={<PlusIcon />}>With Icon</Button>
+                <Button variant="primary" icon={<PlusIcon />}>With Icon</Button>
               </div>
             </div>
 

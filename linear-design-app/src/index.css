@@ -9,9 +9,11 @@
   --color-text-secondary: lch(90.65% 1.35 272 / 1);
   --color-text-tertiary: lch(62.6% 1.35 272 / 1);
   --color-text-quaternary: lch(38.29% 1.35 272 / 1);
+  --color-text-button-alt: lch(90.421% 1 272);
   --color-border-primary: lch(9.77% 3.54 272 / 1);
   --color-border-secondary: lch(14.74% 3.54 272 / 1);
   --color-interactive-primary: lch(12.3 3.7 272);
+  --color-interactive-accent: lch(47.918 59.303 288.421);
   --color-interactive-hover: lch(7.133 2.333 272);
   --content-highlight-color-dark: #ffffff;
 
