@@ -10,17 +10,23 @@
   --color-text-tertiary: lch(62.6% 1.35 272 / 1);
   --color-text-quaternary: lch(38.29% 1.35 272 / 1);
   --color-text-button-alt: lch(90.421% 1 272);
+  --color-text-button-primary: lch(100 5 288.421);
   --color-border-primary: lch(9.77% 3.54 272 / 1);
   --color-border-secondary: lch(14.74% 3.54 272 / 1);
+  --color-border-button-default: lch(19 3.54 272);
+  --color-border-button-primary: lch(53.751 61.636 288.421);
   --color-interactive-primary: lch(12.3 3.7 272);
   --color-interactive-accent: lch(47.918 59.303 288.421);
   --color-interactive-hover: lch(7.133 2.333 272);
+  --color-icon-secondary: lch(61.683 1 272);
   --content-highlight-color-dark: #ffffff;
 
   /* Typography */
   --font-regular: "Inter Variable", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", "Linear Thai", sans-serif;
   --font-display: "Inter Variable", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", "Linear Thai", sans-serif;
   --font-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji";
+  --font-weight-regular: 450;
+  --font-weight-medium: 500;
   --editor-font-size: 0.9375rem;
   --editor-letter-spacing: -0.00666667em;
 
@@ -40,8 +46,12 @@
   --scrollbar-width: 8px;
   --scrollbar-color: var(--color-bg-quaternary);
 
+  /* Shadows */
+  --shadow-subtle: lch(0 0 0 / 0.06) 0px 4px 4px -1px, lch(0 0 0 / 0.12) 0px 1px 1px 0px;
+
   /* Interaction */
   --speed-highlightFadeIn: 150ms;
+  --speed-highlightFadeOut: 150ms;
   --default-duration: 150ms;
   --default-easing: ease;
 }
@@ -57,7 +67,7 @@ body {
   margin: 0;
   font-family: var(--font-regular);
   font-size: 14px;
-  font-weight: 450;
+  font-weight: var(--font-weight-regular);
   line-height: 1.5;
   color: var(--color-text-primary);
   background-color: var(--color-bg-primary);

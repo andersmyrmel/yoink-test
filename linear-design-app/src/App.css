@@ -17,6 +17,7 @@
   flex: 1;
   overflow-y: auto;
   padding: 24px;
+  background-color: var(--color-bg-elevated);
 }
 
 /* Sidebar Header */
@@ -27,9 +28,9 @@
 }
 
 .workspace-name {
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--color-text-primary);
+  font-size: 13px;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-button-alt);
   margin: 0;
 }
 

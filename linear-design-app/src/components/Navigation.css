@@ -8,13 +8,15 @@
 .navigation__item {
   display: flex;
   align-items: center;
+  flex-grow: 1;
   gap: 8px;
-  padding: 4px 8px;
-  color: var(--color-text-primary);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  border-radius: 5px;
+  height: 28px;
+  padding: 0px 2px 0px 6px;
+  color: var(--color-text-button-alt);
+  font-size: 13px;
+  font-weight: var(--font-weight-medium);
+  line-height: normal;
+  border-radius: 4px;
   transition: all var(--default-duration) var(--default-easing);
   text-decoration: none;
 }
@@ -33,11 +35,13 @@
   justify-content: center;
   width: 16px;
   height: 16px;
+  color: var(--color-icon-secondary);
 }
 
 .navigation__icon svg {
   width: 16px;
   height: 16px;
+  fill: currentColor;
 }
 
 .navigation__label {
