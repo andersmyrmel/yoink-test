@@ -33,7 +33,7 @@ export const MainContent = styled.main`
 export const Topbar = styled.header`
   height: ${layout.topbarHeight};
   background: ${colors.white};
-  border-bottom: 1px solid ${colors.borderDefault};
+  border-bottom: 1px solid ${colors.bgElevated2};
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,7 +45,7 @@ export const Topbar = styled.header`
 export const ContentArea = styled.div`
   flex: 1;
   overflow-y: auto;
-  background: ${colors.white};
+  background: ${colors.bgElevated2};
   padding: ${spacing[4]};
 `;
 
@@ -58,5 +58,5 @@ export const SidebarSection = styled.div`
 export const SidebarDivider = styled.div`
   height: 1px;
   background: ${colors.borderDefault};
-  margin: ${spacing[1]} 0;
+  margin: ${spacing[0.75]} 0;
 `;

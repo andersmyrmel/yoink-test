@@ -130,6 +130,7 @@ function App() {
                 style={{
                   fontSize: '16px',
                   fontWeight: 600,
+                  lineHeight: '20px',
                   marginBottom: '24px',
                   color: 'rgb(36, 37, 41)',
                 }}
@@ -159,6 +160,7 @@ function App() {
                       style={{
                         fontSize: '14px',
                         fontWeight: 500,
+                        lineHeight: '20px',
                         marginBottom: '8px',
                       }}
                     >
@@ -167,6 +169,8 @@ function App() {
                     <p
                       style={{
                         fontSize: '12px',
+                        fontWeight: 500,
+                        lineHeight: '16px',
                         color: 'rgba(0, 0, 0, 0.55)',
                         marginBottom: '12px',
                       }}
@@ -196,6 +200,7 @@ function App() {
                   style={{
                     fontSize: '14px',
                     fontWeight: 500,
+                    lineHeight: '20px',
                     marginBottom: '16px',
                   }}
                 >

@@ -32,7 +32,7 @@ const getVariantStyles = (variant: ButtonVariant) => {
       return css`
         background: ${colors.white};
         color: ${colors.textDefault};
-        padding: ${spacing[1]} ${spacing[1]};
+        padding: ${spacing[1]} ${spacing[2]} ${spacing[1]} ${spacing[1.5]};
         border-radius: ${borderRadius.md};
         font-size: ${typography.sizes.xs};
         font-weight: ${typography.weights.regular};
@@ -48,9 +48,9 @@ const getVariantStyles = (variant: ButtonVariant) => {
       return css`
         background: transparent;
         color: ${colors.textDefault};
-        padding: ${spacing[1]} ${spacing[2]};
-        border-radius: ${borderRadius.md};
-        font-size: ${typography.sizes.base};
+        padding: 0px ${spacing[2]};
+        border-radius: ${borderRadius.lg};
+        font-size: ${typography.sizes.xs};
         font-weight: ${typography.weights.regular};
         height: 28px;
 

@@ -13,9 +13,10 @@ const StyledNavItem = styled.button<{ $isActive?: boolean }>`
   align-items: center;
   gap: ${spacing[2]};
   width: 100%;
-  padding: ${spacing[1.5]} ${spacing[2]};
+  padding: 0px ${spacing[2]};
+  height: 28px;
   background: ${(props) => (props.$isActive ? colors.bgElevated2 : 'transparent')};
-  color: ${(props) => (props.$isActive ? colors.textLink : colors.textLink)};
+  color: ${colors.textLink};
   font-size: ${typography.sizes.xs};
   font-weight: ${typography.weights.regular};
   border: none;
@@ -52,7 +53,7 @@ export const NavigationItem: React.FC<NavigationItemProps> = ({
 const StyledNavMenu = styled.nav`
   display: flex;
   flex-direction: column;
-  gap: ${spacing[0.5]};
+  gap: ${spacing.px};
   padding: 0;
 `;
 
