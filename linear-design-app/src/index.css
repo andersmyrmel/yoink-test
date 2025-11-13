@@ -1,0 +1,139 @@
+/* Linear Design System - CSS Variables */
+:root {
+  /* Color Variables */
+  --color-bg-primary: lch(4.8% 0.7 272);
+  --color-bg-secondary: lch(10.633% 3.033 272);
+  --color-bg-quaternary: lch(7.133% 1.867 272);
+  --color-bg-elevated: lch(2.467 0 272);
+  --color-text-primary: lch(100% 0 272 / 1);
+  --color-text-secondary: lch(90.65% 1.35 272 / 1);
+  --color-text-tertiary: lch(62.6% 1.35 272 / 1);
+  --color-text-quaternary: lch(38.29% 1.35 272 / 1);
+  --color-border-primary: lch(9.77% 3.54 272 / 1);
+  --color-border-secondary: lch(14.74% 3.54 272 / 1);
+  --color-interactive-primary: lch(12.3 3.7 272);
+  --color-interactive-hover: lch(7.133 2.333 272);
+  --content-highlight-color-dark: #ffffff;
+
+  /* Typography */
+  --font-regular: "Inter Variable", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", "Linear Thai", sans-serif;
+  --font-display: "Inter Variable", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", "Linear Thai", sans-serif;
+  --font-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji";
+  --editor-font-size: 0.9375rem;
+  --editor-letter-spacing: -0.00666667em;
+
+  /* Spacing */
+  --base-unit: 8px;
+  --editor-block-spacing-small: 0.375rem;
+  --editor-block-spacing: 1rem;
+  --editor-block-spacing-large: 1.375rem;
+  --editor-last-invisible-paragraph-spacing: 10px;
+
+  /* Layout */
+  --topbar-height: 39px;
+  --section-gap: 8px;
+  --grid-pattern: 16px;
+
+  /* Scrollbar */
+  --scrollbar-width: 8px;
+  --scrollbar-color: var(--color-bg-quaternary);
+
+  /* Interaction */
+  --speed-highlightFadeIn: 150ms;
+  --default-duration: 150ms;
+  --default-easing: ease;
+}
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-regular);
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: var(--editor-letter-spacing);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: normal;
+}
+
+h2 {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Links */
+a {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  transition: color var(--default-duration) var(--default-easing);
+}
+
+a:hover {
+  background-color: var(--color-interactive-hover);
+}
+
+/* Scrollbar Styles */
+body.layoutScrollbarObtrusive ::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  height: var(--scrollbar-width);
+}
+
+body.layoutScrollbarObtrusive ::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body.layoutScrollbarObtrusive ::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-color);
+  border-radius: var(--scrollbar-width);
+}
+
+body.layoutScrollbarObtrusive ::-webkit-scrollbar-corner {
+  background-color: var(--color-bg-primary);
+}
+
+/* Default scrollbar for all elements */
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  height: var(--scrollbar-width);
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-color);
+  border-radius: var(--scrollbar-width);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: var(--color-bg-primary);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 640px) {
+  :root {
+    --topbar-height: 48px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 13px;
+  }
+}
